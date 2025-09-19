@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="instructions" aria-label="Assignment instructions">
+      <h1>HTML Assignment</h1>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="signup-title">
+      <h2 id="signup-title" class="title">Sign Up</h2>
+      <form class="form" action="#" method="post" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="first">First Name</label>
+            <input id="first" name="first" type="text" placeholder="First Name" autocomplete="given-name" required />
+          </div>
+          <div class="field">
+            <label for="last">Last Name</label>
+            <input id="last" name="last" type="text" placeholder="Last Name" autocomplete="family-name" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="mobile">Mobile No.</label>
+            <input id="mobile" name="mobile" type="tel" placeholder="Mobile No." inputmode="tel" autocomplete="tel" required />
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="Email Address" autocomplete="email" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Password" minlength="8" required />
+          </div>
+          <div class="field">
+            <label for="confirm">Confirm Password</label>
+            <input id="confirm" name="confirm" type="password" placeholder="Confirm Password" minlength="8" required />
+          </div>
+        </div>
+
+        <div class="agree">
+          <input id="agree" name="agree" type="checkbox" required />
+          <label for="agree">I Agree</label>
+          <p class="fineprint">By clicking <strong>Register</strong>, you agree to the <a href="#" aria-label="Read terms and conditions">Terms and Conditions</a> set out by this site, including our Cookie Use.</p>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Register</button>
+          <button class="btn btn-secondary" type="button">Sign In</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+
